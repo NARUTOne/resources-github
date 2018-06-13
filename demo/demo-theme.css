@@ -100,6 +100,7 @@ select option {
 
 
 .demo-doc {
+	margin: 16px 0;
 	padding: 8px;
 	zoom: 1;
 	border: 1px solid #efefef;
