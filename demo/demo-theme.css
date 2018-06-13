@@ -2,7 +2,13 @@
 	margin: 0;
 	padding: 0;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 html, body {
+	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
 	font-size: 12px;
@@ -90,4 +96,67 @@ select option {
 .btn-error {
 	background-color: #ed3f14;
 	border-color: #ed3f14;
+}
+
+
+.demo-doc {
+	padding: 8px;
+	zoom: 1;
+	border: 1px solid #efefef;
+}
+
+.doc-line {
+	position: relative;
+	padding: 8px 16px 8px 20px;
+	line-height: 1.2;
+}
+
+.doc-line pre {
+	display: block;
+	font-family: Consolas,Menlo,Courier,monospace;
+	font-size: 1em;
+	white-space: pre;
+}
+
+.doc-line code {
+	display: inline-block;
+	background: #f7f7f7;
+	font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+	margin: 0 3px;
+	padding: 1px 5px;
+	border-radius: 3px;
+	color: #666;
+	border: 1px solid #eee;
+}
+
+.doc-default::before {
+	content: '🔹';
+	position: absolute;
+	top: 10px;
+	left: 0;
+	z-index: 9;
+}
+.doc-warn {
+	background-color: rgba(236, 193, 113, 0.6);
+	
+}
+.doc-warn::before {
+	content: '❗';
+	position: absolute;
+	top: 8px;
+	left: 3px;
+	z-index: 9;
+}
+
+.doc-bug {
+	background-color: rgba(236, 117, 113, 0.6);
+	
+}
+
+.doc-bug::before {
+	content: '❓';
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	z-index: 9;
 }
