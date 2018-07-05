@@ -83,9 +83,9 @@ select option {
 /** 个性化**/
 .btn {
 	padding: 6px 8px;
-	background-color: #fff;
+	background-color: #2d8cf0;
 	color: #FFFFFF;
-	border: 1px solid #f3f3f3;
+	border: 1px solid #2d8cf0;
 	border-radius: 3px;
 	cursor: pointer;
 }
